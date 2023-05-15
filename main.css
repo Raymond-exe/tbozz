@@ -1,5 +1,4 @@
-
-._19 {
+body {
     background-color: #02006b;
     overflow: hidden;
 }
@@ -22,14 +21,15 @@
     height: auto;
     transform: translate(-50%, -50%);
     border-radius: 2vmax;
-    transition: all 0.25s;
+    transition:  0.35s;
     pointer-events: none;
 }
 
-#photofield .hidden {
-    width: 0;
-    height: 0;
-    transition: all 1s;
+.hidden {
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+    transition: all 2s;
 }
 
 .secret {

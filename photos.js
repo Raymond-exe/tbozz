@@ -81,14 +81,14 @@ function getRandomImage(x, y) {
         del.style.opacity = 0;
         setTimeout(() => {
             del.remove();
-        }, 750);
+        }, 1000);
     }
     
     // remove "hidden" class from photo shortly
     // used to create grow/shrink effect
     setTimeout(() => {
         element.classList.remove("hidden");
-    }, 10);
+    }, 1);
 
     return element;
 }
