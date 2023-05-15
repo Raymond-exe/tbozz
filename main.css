@@ -1,0 +1,42 @@
+
+._19 {
+    background-color: #02006b;
+    overflow: hidden;
+}
+
+#photofield {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#photofield .photo {
+    position: absolute;
+    max-width: 25vmax;
+    max-height: 25vmax;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    border-radius: 2vmax;
+    transition: all 0.25s;
+    pointer-events: none;
+}
+
+#photofield .hidden {
+    width: 0;
+    height: 0;
+    transition: all 1s;
+}
+
+.secret {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-99.5%, -99.5%);
+    opacity: 0.0001;
+    pointer-events: none;
+}
